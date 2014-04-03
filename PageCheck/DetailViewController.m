@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (void)configureView;
 @end
 
@@ -31,7 +32,11 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
+        self.title = [[self.detailItem valueForKey:@"name"] description];
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        NSURL *url = [NSURL URLWithString:[[self.detailItem valueForKey:@"domain"] description]];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
     }
 }
 
@@ -46,6 +51,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIWebViewDelegate
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Domain could not load." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+    NSLog(@"Error : %@",error);
 }
 
 @end

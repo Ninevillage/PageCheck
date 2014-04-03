@@ -25,6 +25,7 @@
 		51770B7218EE13D200000683 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51770B4D18EE13D200000683 /* CoreData.framework */; };
 		51770B7A18EE13D200000683 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51770B7818EE13D200000683 /* InfoPlist.strings */; };
 		51770B7C18EE13D200000683 /* PageCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51770B7B18EE13D200000683 /* PageCheckTests.m */; };
+		51770B8718EE166700000683 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51770B8618EE166700000683 /* AddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		51770B7718EE13D200000683 /* PageCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PageCheckTests-Info.plist"; sourceTree = "<group>"; };
 		51770B7918EE13D200000683 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51770B7B18EE13D200000683 /* PageCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageCheckTests.m; sourceTree = "<group>"; };
+		51770B8518EE166700000683 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		51770B8618EE166700000683 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				51770B6218EE13D200000683 /* MasterViewController.m */,
 				51770B6418EE13D200000683 /* DetailViewController.h */,
 				51770B6518EE13D200000683 /* DetailViewController.m */,
+				51770B8518EE166700000683 /* AddViewController.h */,
+				51770B8618EE166700000683 /* AddViewController.m */,
 				51770B6718EE13D200000683 /* Images.xcassets */,
 				51770B5E18EE13D200000683 /* PageCheck.xcdatamodeld */,
 				51770B5018EE13D200000683 /* Supporting Files */,
@@ -265,6 +270,7 @@
 			files = (
 				51770B6618EE13D200000683 /* DetailViewController.m in Sources */,
 				51770B6318EE13D200000683 /* MasterViewController.m in Sources */,
+				51770B8718EE166700000683 /* AddViewController.m in Sources */,
 				51770B6018EE13D200000683 /* PageCheck.xcdatamodeld in Sources */,
 				51770B5A18EE13D200000683 /* AppDelegate.m in Sources */,
 				51770B5618EE13D200000683 /* main.m in Sources */,
